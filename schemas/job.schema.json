@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "JobInboxRecord",
+  "type": "object",
+  "required": [
+    "company",
+    "title",
+    "source",
+    "source_url"
+  ],
+  "properties": {
+    "job_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "external_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "location": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "remote_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "employment_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "currency": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "experience_required": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "education_required": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "work_rights_requirement": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "citizenship_requirement": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "clearance_requirement": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "posted_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "closing_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "date_discovered": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "company": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_url": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string"
+    },
+    "canonical_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "required_skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "preferred_skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "salary_min": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "salary_max": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "requirements_reviewed": {
+      "type": "boolean"
+    },
+    "requirements": {
+      "type": "array"
+    },
+    "source_evidence": {
+      "type": "array"
+    }
+  }
+}

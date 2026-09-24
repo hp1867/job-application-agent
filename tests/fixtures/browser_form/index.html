@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Job Agent — Local Browser Fixture</title></head>
+<body><main><h1>Local application test form</h1><p id="policy">Synthetic test environment. Automated filling and file selection are permitted here. This page sends no application and makes no external network requests.</p><p><strong>DRY RUN — submission is disabled</strong></p>
+<form id="application"><p><label>Full name <input id="name" name="name" required autocomplete="off"></label></p><p><label>Email <input id="email" type="email" name="email" required autocomplete="off"></label></p>
+<p><label>Preferred name <input id="preferred" name="preferred" required autocomplete="off"></label></p>
+<p><label>Test resume <input id="resume" type="file" accept=".txt"></label></p><p id="file-status">No file selected</p><button type="submit" disabled>Submit disabled in dry run</button></form>
+<h2>Review status</h2><p id="review" role="status">Waiting for verified test information and test resume.</p><pre id="receipt"></pre><script src="app.js"></script></main></body></html>

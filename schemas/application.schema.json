@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Application",
+  "type": "object",
+  "required": [
+    "application_id",
+    "job_id",
+    "status"
+  ],
+  "properties": {
+    "application_id": {
+      "type": "string"
+    },
+    "job_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "FOUND",
+        "ANALYSED",
+        "SHORTLISTED",
+        "RESUME_READY",
+        "READY_TO_APPLY",
+        "WAITING_FOR_APPROVAL",
+        "APPLIED",
+        "APPLICATION_RECEIVED",
+        "ASSESSMENT",
+        "PHONE_SCREEN",
+        "INTERVIEW",
+        "SECOND_INTERVIEW",
+        "FINAL_INTERVIEW",
+        "OFFER",
+        "REJECTED",
+        "WITHDRAWN",
+        "CLOSED"
+      ]
+    },
+    "score": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 100
+    },
+    "date_applied": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "packet": {
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  }
+}

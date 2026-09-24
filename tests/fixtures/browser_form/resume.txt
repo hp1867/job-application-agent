@@ -1,0 +1,5 @@
+SYNTHETIC_TEST_CANDIDATE
+Test Candidate
+candidate@example.test
+This file exists only to test the local browser upload bridge.
+It is not a real applicant resume and must never be sent to an employer.

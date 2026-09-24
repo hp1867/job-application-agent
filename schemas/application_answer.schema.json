@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VerifiedAnswer",
+  "type": "object",
+  "required": [
+    "question",
+    "normalised_question",
+    "answer",
+    "verified",
+    "last_verified",
+    "requires_manual_confirmation"
+  ],
+  "properties": {
+    "question": {
+      "type": "string"
+    },
+    "normalised_question": {
+      "type": "string"
+    },
+    "answer": {},
+    "verified": {
+      "type": "boolean"
+    },
+    "last_verified": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "requires_manual_confirmation": {
+      "type": "boolean"
+    }
+  }
+}

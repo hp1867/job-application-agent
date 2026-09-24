@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "target_roles": [
+    "Software Engineering Intern",
+    "Software Developer Intern",
+    "Cybersecurity Intern",
+    "Cyber Security Intern",
+    "Security Analyst Intern",
+    "SOC Analyst Intern",
+    "IT Intern",
+    "Technology Intern",
+    "Graduate Software Engineer",
+    "Graduate Cybersecurity",
+    "Junior Software Developer",
+    "Junior Security Analyst"
+  ],
+  "preferred_locations": [
+    "Melbourne",
+    "Victoria",
+    "Australia",
+    "Remote Australia",
+    "Hybrid Melbourne"
+  ],
+  "preferred_industries": null,
+  "employment_types": [
+    "Internship",
+    "Graduate",
+    "Entry-level",
+    "Junior"
+  ],
+  "excluded_titles": [
+    "Senior Engineer",
+    "Lead Engineer",
+    "Principal",
+    "Engineering Manager",
+    "Security Manager"
+  ],
+  "max_required_experience_years": 2,
+  "application_threshold": 70,
+  "auto_submit_threshold": 80,
+  "prefer_recent_days": 30,
+  "max_jobs_per_run": 30,
+  "resumes_per_run": 5,
+  "salary_min": null,
+  "remote_australia": true,
+  "queries": [
+    "Software Engineering Intern Melbourne",
+    "Software Developer Intern Melbourne",
+    "Cybersecurity Intern Melbourne",
+    "Cyber Security Intern Melbourne",
+    "Security Analyst Intern Melbourne",
+    "SOC Analyst Intern Melbourne",
+    "IT Intern Melbourne",
+    "Technology Intern Melbourne",
+    "Graduate Software Engineer Melbourne",
+    "Graduate Cybersecurity Melbourne",
+    "Junior Software Developer Melbourne",
+    "Junior Security Analyst Melbourne",
+    "software engineering internship remote Australia",
+    "entry level cybersecurity Melbourne"
+  ],
+  "schedule": {
+    "timezone": "Australia/Sydney",
+    "morning": "08:00",
+    "monitor_hours": [
+      "10:00",
+      "13:00",
+      "16:00"
+    ],
+    "evening": "18:00"
+  }
+}

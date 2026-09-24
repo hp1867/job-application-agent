@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Job Agent - Dropdown test</title></head>
+<body><main><h1 id="identity">Example Employer - Software Engineering Intern</h1>
+<p id="policy">Synthetic test environment. Automated filling and file selection are permitted here. The Next button changes only the local form step. No application is sent.</p>
+<form id="application" data-step="contact">
+<fieldset id="contact"><legend>Contact and resume</legend>
+<label>Full name <input id="name" name="name" required autocomplete="off"></label>
+<label>Email <input id="email" type="email" name="email" required autocomplete="off"></label>
+<label>Test resume <input id="resume" type="file" accept=".txt"></label>
+<button id="next" type="button" data-next-step="review">Next</button></fieldset>
+<fieldset id="review-step" hidden><legend>Review application</legend>
+<label>Preferred name <select id="preferred" name="preferred" required><option value="">Choose</option><option value="Test">Test</option><option value="Different">Different</option></select></label>
+<button type="submit" disabled>Submit disabled in dry run</button></fieldset></form>
+<p id="file-status">No file selected</p><p id="review" role="status">Waiting</p><pre id="receipt"></pre>
+<script src="app.js"></script><script src="steps.js"></script></main></body></html>

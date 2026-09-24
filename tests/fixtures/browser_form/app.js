@@ -1,0 +1,7 @@
+const form=document.getElementById('application'),nameField=document.getElementById('name'),emailField=document.getElementById('email'),preferredField=document.getElementById('preferred'),fileField=document.getElementById('resume');
+let fileVerified=false;
+function update(){const ready=nameField.value==='Test Candidate'&&emailField.value==='candidate@example.test'&&preferredField.value==='Test'&&fileVerified;document.getElementById('review').textContent=ready?'READY FOR REVIEW — no application submitted.':'Waiting for verified test information and test resume.';document.getElementById('receipt').textContent=JSON.stringify({test_only:true,name:nameField.value,email:emailField.value,preferred_name:preferredField.value,file_selected:fileVerified,submitted:false},null,2)}
+form.addEventListener('submit',event=>{event.preventDefault();document.getElementById('review').textContent='Submission blocked by dry run.'});
+nameField.addEventListener('input',update);emailField.addEventListener('input',update);preferredField.addEventListener('input',update);
+fileField.addEventListener('change',async()=>{const file=fileField.files[0];fileVerified=false;if(file){const text=await file.text();fileVerified=text.includes('SYNTHETIC_TEST_CANDIDATE');document.getElementById('file-status').textContent=fileVerified?'Test resume selected: '+file.name:'Rejected: select the synthetic fixture file only.';if(!fileVerified)fileField.value=''}update()});
+update();

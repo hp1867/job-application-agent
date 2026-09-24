@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EmailCapture",
+  "type": "object",
+  "required": [
+    "email_id",
+    "sender",
+    "subject",
+    "body",
+    "received_at"
+  ],
+  "properties": {
+    "email_id": {
+      "type": "string"
+    },
+    "sender": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "received_at": {
+      "type": "string"
+    }
+  }
+}

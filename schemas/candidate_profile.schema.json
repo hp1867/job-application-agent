@@ -1,0 +1,259 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CandidateProfile",
+  "type": "object",
+  "required": [
+    "full_name",
+    "email",
+    "phone",
+    "location",
+    "linkedin",
+    "github",
+    "portfolio",
+    "education",
+    "employment_experience",
+    "projects",
+    "technical_skills",
+    "soft_skills",
+    "certifications",
+    "achievements",
+    "languages",
+    "availability",
+    "target_roles",
+    "preferred_locations",
+    "preferred_industries",
+    "work_rights",
+    "citizenship",
+    "visa_status",
+    "requires_sponsorship",
+    "graduation_date",
+    "study_year",
+    "driver_licence",
+    "security_clearance",
+    "salary_expectation",
+    "relocation_preference",
+    "VERIFIED_INFORMATION",
+    "UNKNOWN_INFORMATION",
+    "provenance",
+    "identity_confirmed"
+  ],
+  "properties": {
+    "full_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "email": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "phone": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "location": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "linkedin": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "github": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "portfolio": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "education": {
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "employment_experience": {
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "projects": {
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "technical_skills": {
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "soft_skills": {
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "certifications": {
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "achievements": {
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "languages": {
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "availability": {},
+    "target_roles": {
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "preferred_locations": {
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "preferred_industries": {
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "work_rights": {},
+    "citizenship": {},
+    "visa_status": {},
+    "requires_sponsorship": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "graduation_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "study_year": {},
+    "driver_licence": {},
+    "security_clearance": {},
+    "salary_expectation": {},
+    "relocation_preference": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "identity_confirmed": {
+      "type": "boolean"
+    },
+    "intake_deferred": {
+      "type": "boolean"
+    },
+    "VERIFIED_INFORMATION": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "full_name",
+          "email",
+          "phone",
+          "location",
+          "linkedin",
+          "github",
+          "portfolio",
+          "education",
+          "employment_experience",
+          "projects",
+          "technical_skills",
+          "soft_skills",
+          "certifications",
+          "achievements",
+          "languages",
+          "availability",
+          "target_roles",
+          "preferred_locations",
+          "preferred_industries",
+          "work_rights",
+          "citizenship",
+          "visa_status",
+          "requires_sponsorship",
+          "graduation_date",
+          "study_year",
+          "driver_licence",
+          "security_clearance",
+          "salary_expectation",
+          "relocation_preference"
+        ]
+      }
+    },
+    "UNKNOWN_INFORMATION": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "full_name",
+          "email",
+          "phone",
+          "location",
+          "linkedin",
+          "github",
+          "portfolio",
+          "education",
+          "employment_experience",
+          "projects",
+          "technical_skills",
+          "soft_skills",
+          "certifications",
+          "achievements",
+          "languages",
+          "availability",
+          "target_roles",
+          "preferred_locations",
+          "preferred_industries",
+          "work_rights",
+          "citizenship",
+          "visa_status",
+          "requires_sponsorship",
+          "graduation_date",
+          "study_year",
+          "driver_licence",
+          "security_clearance",
+          "salary_expectation",
+          "relocation_preference"
+        ]
+      }
+    },
+    "provenance": {
+      "type": "object"
+    }
+  }
+}

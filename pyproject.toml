@@ -1,0 +1,9 @@
+[project]
+name = "job-application-agent"
+version = "0.1.0"
+description = "Persistent job application workflow with verified facts, review gates and a local dashboard"
+requires-python = ">=3.11"
+dependencies = ["python-docx>=1.1,<2", "pypdf>=5,<7", "reportlab>=4,<5", "tzdata>=2024.1"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
